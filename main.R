@@ -4,7 +4,6 @@ library(igraphdata)
 data(karate)
 head(karate)
 
-#A Sub-part
 
 # calculating the number of edges to be removed (which is 5%)
 num_edges <- ecount(karate)
@@ -43,7 +42,6 @@ class(mcmc_karate)
 #class(required_edges)
 #plot(required_edges)
 
-#B Sub-part
 
 # calculating the number of edges to be removed (which is 5%)
 data(kite)
@@ -67,7 +65,6 @@ mcmc_kite <- hrg.fit(kite)
 mcmc_kite
 class(mcmc_kite)
 
-#C Sub-part
 
 num_edges_sk <- ecount(karate)
 num_edges_to_delete_sk <- ceiling(0.10 * num_edges_sk)
